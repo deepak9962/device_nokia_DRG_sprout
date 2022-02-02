@@ -9,3 +9,6 @@ type proc_bandinfo, proc_type, fs_type;
 
 # rtc
 type sysfs_msm_subsys, sysfs_type, fs_type;
+
+# msm_irqbalance
+type proc_irq, fs_type;
