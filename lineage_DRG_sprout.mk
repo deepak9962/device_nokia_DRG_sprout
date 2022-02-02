@@ -17,8 +17,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AOSP stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from  device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -41,7 +41,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-hmd
 TARGET_VENDOR := nokia
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=Dragon_00WW \
-    PRIVATE_BUILD_DESC="Dragon_00WW 10 QKQ1.190828.002 00WW_4_15C release-keys"
+    PRODUCT_NAME=DRG_sprout\
+    PRIVATE_BUILD_DESC="DRG_sprout 12 SQ1D.220105.007 1833 release-keys"
 
-BUILD_FINGERPRINT := Nokia/Dragon_00WW/DRG_sprout:10/QKQ1.190828.002/00WW_4_15C:user/release-keys
+BUILD_FINGERPRINT := Nokia/DRG_sprout/DRG_sprout:12/SQ1D.220105.007/1833:userdebug/release-keys
